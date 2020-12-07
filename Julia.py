@@ -54,7 +54,7 @@ def speak(audio_string,langue):
 
 def respond(voice_data):
     if there_exists(['hello julia','hello']):
-        greetings = [f"Good morning {person_obj.name}",f"Hi {person_obj.name}",f"Hey"]
+        greetings = [f"Good morning {person_obj.name}",f"Hi {person_obj.name}",f"Hey {person_obj.name}"]
         greet = greetings[random.randint(0,len(greetings)-1)]
         speak(greet, 'en')
     
@@ -79,14 +79,14 @@ def respond(voice_data):
         speak("et il est, composé de 4 page, le sujet de cet article est, reconnaissance automatique, de parole, en utilisant, un réseaux de neurones convolutif, les principeaux mots, importante sont: ",'fr')
         speak("speech recognition, convolution neural network, back propagation",'en')
         speak("Dans cet article, les auteurs utilise, le MFCC et le CNN ,pour classifier ,les mots isolées ,de sont propre base d'apprentissage, sans tombe dans le cas de sur-apprentissage.",'fr')
-
+        speak("Maintenant je vous laisse, avec Naoufel pour le reste de présentation","fr")
 
     if there_exists(["how are you","how are you doing"]):
         speak(f"I'm very well, thanks for asking",'en')
         
     
     if there_exists(["thank you julia","thanks","thank you"]):
-        thanks = [f"Welcome, I'm here to help you",f"Welcome"]
+        thanks = [f"Welcome, I'm here to help you",f"Welcome, I'm here to help you"]
         thank = thanks[random.randint(0,len(thanks)-1)]
         speak(thank,'en')
         
